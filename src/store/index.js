@@ -3,8 +3,9 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-import example from "./example"
-
+import shop from "./shop"
 export default new Vuex.Store({
-   modules: { example }
+   modules: {
+      shop
+   }
 })

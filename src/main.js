@@ -1,9 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
+
 import router from './routes'
 import store from './store'
-import './assets/scss/main.scss'
 
+
+
+import VueCarousel from 'vue-carousel';
+Vue.use(VueCarousel);
+
+import './assets/scss/main.scss'
 
 new Vue({
   router,

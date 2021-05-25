@@ -4,7 +4,8 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 import Home from '@/pages/Home.vue'
-import Example from '@/pages/Example.vue'
+import Shop from '@/pages/Shop.vue'
+import Product from '@/pages/Product.vue'
 
 export default new Router({
    routes: [
@@ -14,9 +15,14 @@ export default new Router({
          component: Home
       },
       {
-         path: '/example',
-         name: "example",
-         component: Example
+         path: '/shop',
+         name: "shop",
+         component: Shop
+      },
+      {
+         path: '/shop/:id',
+         name: "product",
+         component: Product
       },
    ]
 })
